@@ -4,28 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e3f67ea-9a69-4709-8a3a-8150e17adfe8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/parkinglot/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/parkinglot/model/Bike.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/parkinglot/model/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/parkinglot/model/ParkingSlot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/parkinglot/model/SlotType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/parkinglot/model/Ticket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/parkinglot/model/Truck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/parkinglot/model/Vehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/parkinglot/model/VehicleType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/parkinglot/service/Floor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/parkinglot/service/ParkingLot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/test/java/com/parkinglot/ParkingLotTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="3e3f67ea-9a69-4709-8a3a-8150e17adfe8" name="Changes" comment="ParkingLot System" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,6 +21,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Bhagyashree-Dembla/ParkingLot-webapp.git",
+    "accountId": "a5796c9b-f455-42e0-a486-191ee9f822aa"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 1
 }]]></component>
@@ -62,8 +47,8 @@
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -83,6 +68,19 @@
       <option name="presentableId" value="Default" />
       <updated>1745488655780</updated>
     </task>
+    <task id="LOCAL-00001" summary="ParkingLot System">
+      <option name="closed" value="true" />
+      <created>1745517548652</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1745517548652</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ParkingLot System" />
+    <option name="LAST_COMMIT_MESSAGE" value="ParkingLot System" />
   </component>
 </project>
