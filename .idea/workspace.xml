@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e3f67ea-9a69-4709-8a3a-8150e17adfe8" name="Changes" comment="ParkingLot System" />
+    <list default="true" id="3e3f67ea-9a69-4709-8a3a-8150e17adfe8" name="Changes" comment="ParkingLot System">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/parkinglot/model/SlotOccupiedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/parkinglot/service/InvalidTicketException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/parkinglot/ParkingLotTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkinglot/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkinglot/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkinglot/model/ParkingSlot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkinglot/model/ParkingSlot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkinglot/service/Floor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkinglot/service/Floor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkinglot/service/ParkingLot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkinglot/service/ParkingLot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/java/com/parkinglot/ParkingLotTest.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,15 +32,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Bhagyashree-Dembla/ParkingLot-webapp.git",
-    "accountId": "a5796c9b-f455-42e0-a486-191ee9f822aa"
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Bhagyashree-Dembla"
   }
 }]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Bhagyashree-Dembla/ParkingLot-webapp.git&quot;,
+    &quot;accountId&quot;: &quot;a5796c9b-f455-42e0-a486-191ee9f822aa&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2wAe9k06TFEoH8h5NPzZHxf6Hop" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -40,12 +57,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.ParkingLotTest.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/ParkingLot-webapp",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -58,6 +77,65 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\JavaProjects\parking-lot-system\src\main\java\com\parkinglot" />
     </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.parkinglot.Main" />
+      <module name="parking-lot-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.parkinglot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParkingLotTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="parking-lot-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.parkinglot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.parkinglot" />
+      <option name="MAIN_CLASS_NAME" value="com.parkinglot.ParkingLotTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParkingLotTest.testParkingLotFullScenario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="parking-lot-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.parkinglot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.parkinglot" />
+      <option name="MAIN_CLASS_NAME" value="com.parkinglot.ParkingLotTest" />
+      <option name="METHOD_NAME" value="testParkingLotFullScenario" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="ParkingLot-webapp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ParkingLotTest.testParkingLotFullScenario" />
+        <item itemvalue="JUnit.ParkingLotTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

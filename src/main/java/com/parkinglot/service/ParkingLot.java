@@ -3,6 +3,7 @@ package com.parkinglot.service;
 import com.parkinglot.model.ParkingSlot;
 import com.parkinglot.model.Ticket;
 import com.parkinglot.model.Vehicle;
+import com.parkinglot.model.SlotOccupiedException;
 
 import java.util.Date;
 import java.util.HashMap;
@@ -22,11 +23,15 @@ public class ParkingLot {
         for(Floor floor : floors) {
             ParkingSlot slot = floor.getAvailableSlot(vehicle);
             if (slot != null) {
-                slot.assignVehicle(vehicle);
-                Ticket ticket = new Ticket(vehicle, slot);
-                activeTickets.put(ticket.getTicketId(), ticket);
-                System.out.println("Ticket issued: " + ticket.getTicketId());
-                return ticket;
+                try {
+                    slot.assignVehicle(vehicle);
+                    Ticket ticket = new Ticket(vehicle, slot);
+                    activeTickets.put(ticket.getTicketId(), ticket);
+                    System.out.println("Ticket issued: " + ticket.getTicketId());
+                    return ticket;
+                } catch (SlotOccupiedException e) {
+                    System.err.println("Error: " + e.getMessage());
+                }
             }
         }
         System.out.println("No available slot for " + vehicle.getVehicleType());
@@ -36,11 +41,15 @@ public class ParkingLot {
     public double unparkVehicle(String ticketId) {
         Ticket ticket = activeTickets.remove(ticketId);
         if (ticket == null) {
-            System.out.println("Invalid ticket");
-            return 0;
+            System.err.println("Invalid ticket: " + ticketId);
+            throw new InvalidTicketException("Invalid ticket: " + ticketId);
         }
         ParkingSlot slot = ticket.getParkingSlot();
-        slot.removeVehicle();
+        try {
+            slot.removeVehicle();
+        } catch (IllegalStateException e) {
+            System.err.println("Error: " + e.getMessage());
+        }
         return calculateCharges(ticket.getEntryTime());
     }
 

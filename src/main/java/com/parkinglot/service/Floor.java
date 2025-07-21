@@ -16,8 +16,12 @@ public class Floor {
 
     public ParkingSlot getAvailableSlot(Vehicle vehicle) {
         for (ParkingSlot slot : parkingSlots) {
-            if(slot.canFitVehicle(vehicle)) {
-                return slot;
+            try {
+                if(slot.canFitVehicle(vehicle)) {
+                    return slot;
+                }
+            } catch (Exception e) {
+                System.err.println("Error checking slot: " + e.getMessage());
             }
         }
         return null;
